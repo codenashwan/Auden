@@ -30,10 +30,17 @@
           >
         </div>
       </div>
-      <div class="border-y flex justify-center items-center gap-3 mt-2">
+      <div class="flex justify-between items-center lg:hidden p-3">
+        <p class="font-bold text-2xl text-orange-400">Auden</p>
+        <i class="bx bx-menu-alt-right text-4xl text-orange-400"></i>
+      </div>
+
+      <div
+        class="border-y hidden lg:flex flex-col lg:flex-row justify-center items-center gap-3 mt-2"
+        id="menu"
+      >
         <a href="#" class="nav-link">Home Pages</a>
         <a href="#" class="nav-link">Custom Pages</a>
-        <a href="#" class="nav-link">Home Pages</a>
         <a href="#" class="nav-link">Home Pages</a>
         <a href="#" class="nav-link">Home Pages</a>
         <i class="bx bx-dots-horizontal-rounded text-xl"></i>
@@ -75,14 +82,15 @@
         <div class="col-span-3">
           <img
             src="/assets/img/grey_chair.jpg"
-            class="w-[700px] h-[600px] object-cover ml-auto rounded-xl"
+            class="w-[700px] md:h-[500px] xl:h-[600px] object-cover ml-auto rounded-xl"
           />
         </div>
       </div>
-
-      <div class="grid grid-cols-8 gap-5 mt-5">
-        <div class="col-span-6">
-          <div class="grid grid-cols-2 gap-5">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-5 mt-5"
+      >
+        <div class="col-span-1 md:col-span-4 lg:col-span-5 xl:col-span-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <img
                 src="/assets/img/1.jpeg"
@@ -168,7 +176,9 @@
             </div>
           </div>
         </div>
-        <div class="col-span-2 flex flex-col gap-5">
+        <div
+          class="col-span-1 md:col-span-4 lg:col-span-5 xl:col-span-2 flex flex-col gap-5"
+        >
           <div class="border bg-zinc-50 p-3 rounded-md text-center">
             <p class="font-bold text-xl text-stone-700">Auden</p>
             <img
